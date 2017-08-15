@@ -3,7 +3,9 @@
 Introduction to Angular JS and Spring Boot.
 
 
-1) Create a Spring Boot Project with the following configuration 
+1) Create a Spring Boot Project at [Spring Intializer](https://start.spring.io) webstite with the following configuration: 
+ 
+ ![alt text](img/spring-initializer.png.png)
  
 2) Clone this repository and copy the content of the angular-seed
 folder into the following route src/main/resources/static of your generated Spring Boot Project.
