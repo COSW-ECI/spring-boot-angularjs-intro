@@ -242,14 +242,18 @@ Once you understand the concept of services then create a service that will hand
 20) Run the Angular server and verify that the add todo works.
 
 
-5) Once the installation is complete test the current project by running the Spring Boot server:
+#### Part 2: Compile the angular project and include it on the Spring Boot server
 
-
-18) Compile the Angular project with the following command:
+1) Compile the Angular project with the following command:
     
     ```
     npm run build
     ```
  
- 
+2) Copy all the files contain in the *anuglar-seed/dist* folder of the *resources/static* folder in the SpringBoot project.
+
+3) Run the Spring Boot server from the console with *./gradlew bootRun* and verify that project works.
+
+
+
 
