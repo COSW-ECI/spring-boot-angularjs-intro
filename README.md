@@ -54,10 +54,10 @@ Once you understand the concept of services then create a service that will hand
     ng g service todo --spec false
     ```
             
-    6.3) Open the file todo.service.ts and check the content of the generated file.
+    6.3) Open the file *todo.service.ts* and check the content of the generated file.
       
 
-7) Create a mocked list of TODO objects in the todo.service.ts file:
+7) Create a mocked list of TODO objects in the *todo.service.ts* file:
 
     ``` 
     @Injectable()
@@ -83,7 +83,7 @@ Once you understand the concept of services then create a service that will hand
      ```
      
 
-9) Register the todo.service as provided in the app.module.ts file:
+9) Register the *todo.service* as provided in the *app.module.ts* file:
 
     9.1) Import the service:
 
@@ -91,7 +91,7 @@ Once you understand the concept of services then create a service that will hand
       import { TodoService } from './services/todo.service';
 
       ```
-    9.2) Include the todo.service in the providers array of the app module:
+    9.2) Include the *todo.service* in the providers array of the app module:
       ``` 
      @NgModule({
        declarations: [
@@ -113,37 +113,37 @@ Once you understand the concept of services then create a service that will hand
     
       ```
 
-10) Import and inject the todo.service in the task-list-page.components.ts:
+10) Import and inject the *todo.service* in the *task-list-page.components.ts*:
 
-    10.1) Import the TodoService and the model:
+    10.1) Import the *TodoService* and the model:
 
     ``` 
     import { TodoService } from '../../services/todo.service';
     import { Todo } from '../../models/todo';             
     ```  
           
-    10.1) Inject the TodoService in the component constructor:
+    10.1) Inject the *TodoService* in the component constructor:
           
       ``` 
        constructor(public todoService: TodoService) {
                 
                   }
        ```   
-11) Create a list of Todo Objects in the TaskListPageComponent:
+11) Create a list of Todo Objects in the *TaskListPageComponent*:
      
      ``` 
     export class TaskListPageComponent implements OnInit {
       private todos: Todo[] = [];
       ``` 
             
-12) Implement the ngOnInit method to initialize the Todo Objects list:
+12) Implement the *ngOnInit* method to initialize the Todo Objects list:
        
      ``` 
      ngOnInit() {
          this.todos = this.todoService.list();
        }
       ``` 
-13) Go to the view tasks-list-page.component.html and add the logic to display the list:      
+13) Go to the view *tasks-list-page.component.html* and add the logic to display the list:      
       
       ``` 
      <h2>Tasks</h2>
@@ -164,9 +164,9 @@ Once you understand the concept of services then create a service that will hand
       ``` 
 14) Start the Angular server and verify that the lists of TODOs is shown correctly.
 
-15) Inject the Todo service in the TaskEditPageComponent.
+15) Inject the Todo service in the *TaskEditPageComponent*.
  
-16) Create a form on the view task-edit-page-component.html to create a TODO object:
+16) Create a form on the view *task-edit-page-component.html* to create a TODO object:
      ``` 
      <div class="container">
        <h2>Edit Task</h2>
@@ -192,13 +192,13 @@ Once you understand the concept of services then create a service that will hand
      </div>
     ``` 
 
-17) Import the fromGroup class and formBuilder service on the task-edit-page.component.ts:
+17) Import the fromGroup class and formBuilder service on the *task-edit-page.component.ts*:
     
     ```  
     import { FormGroup, FormBuilder } from '@angular/forms';
     ``` 
     
-18) Initialize the form on the task-edit-page.component.ts ngOnInit method:
+18) Initialize the form on the *task-edit-page.component.ts* ngOnInit method:
 
     ```  
     ngOnInit() {
@@ -210,7 +210,7 @@ Once you understand the concept of services then create a service that will hand
       }
     ``` 
 
-19) Inject the router service on the task-edit-page.component.ts:
+19) Inject the router service on the *task-edit-page.component.ts*:
     
     ```  
     import { Router } from '@angular/router';
@@ -224,7 +224,7 @@ Once you understand the concept of services then create a service that will hand
       }
     ```
 
-19) Implement the method onSubmit on the task-edit-page.component.ts:
+19) Implement the method onSubmit on the *task-edit-page.component.ts*:
 
      ```  
     onSubmit() {
