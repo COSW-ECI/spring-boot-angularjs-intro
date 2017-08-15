@@ -7,10 +7,9 @@ Introduction to Angular JS and Spring Boot.
  
  ![alt text](img/spring-initializer.png)
  
-2) Clone this repository and copy the content of the angular-seed
-folder into the following route src/main/resources/static of your generated Spring Boot Project.
+2) Clone this repository, open the console and  go to *angular-seed* folder
  
-3) Navigate to the route where you copy the previous files and install the node libraries with the following command:
+3) Install the node libraries with the following command:
 
     ```
     npm install
