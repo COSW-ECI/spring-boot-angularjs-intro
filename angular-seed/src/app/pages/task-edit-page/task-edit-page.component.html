@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>Edit Task</h2>
+  <form [formGroup]="todoForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input type="text" class="form-control" id="description" formControlName="description" required>
+    </div>
+
+    <div class="form-group">
+      <label for="priority">Priority</label>
+      <input type="number" class="form-control" id="alterEgo" formControlName="priority">
+    </div>
+
+    <div class="form-group">
+      <label for="completed">Completed</label>
+      <input type="checkbox" class="form-control" id="completed" formControlName="completed">
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+
+  </form>
+</div>
